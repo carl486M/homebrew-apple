@@ -43,6 +43,7 @@ class GamePortingToolkitCompiler < Formula
                       "-DLLVM_TARGETS_TO_BUILD=X86",
                       "-DLLVM_NATIVE_ARCH=X86",
                       "-DLLVM_HOST_TRIPLE=x86_64-apple-darwin",
+                      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                       "-DLLVM_INSTALL_TOOLCHAIN_ONLY=On",
                       "-DLLVM_ENABLE_PROJECTS=clang",
                       buildpath/"llvm"
